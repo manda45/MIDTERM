@@ -1,0 +1,193 @@
+/* UNIVERSAL SELECTOR */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOBAL SELECTOR */
+html{
+    font-size: 65%;
+}
+
+/* CSS VARIABLES */
+:root{
+    --main-color: #dd0101;
+    --secondary-color: #fcece2;
+    --dark-color: #00190e;
+    --dark-secondary-color: #00cf3b;
+}
+
+
+/* bodyodyody */
+header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+main {
+  width: 80%;
+  margin-left: 12%;
+  margin-right: 10%;
+  padding: 40px 20px;
+}
+
+body {
+    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, var(--secondary-color), var(--main-color) );
+    color: black;
+
+    /* font-size: 15px; */
+}
+
+h1 {font-size: 1rem;
+padding: 0.5em 0;
+font-style: italic;}
+
+
+
+.btn {
+    background-color: var(--main-color);
+    color: white;
+    border: white 1px solid;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+}
+
+.dark .btn {
+    background-color: var(--dark-color);
+    color: white;
+    border: white 1px solid;
+    padding: 0.5em 1em;
+    border-radius: 15px; 
+}
+
+
+
+/* ELEMENT SELECTORS */
+section {
+  margin-bottom: 30px;
+}
+
+/* CLASS SELECTORS */
+.card {
+  background-color: var(--secondary-color);
+  padding: 2em 35px;
+  width: 90%;
+  margin-left: 50%  auto;
+}
+
+.dark .card {
+  background-color: var(--dark-secondary-color);
+  color: var(--dark-color);
+  padding: 2em 35px;
+  width: 90%;
+}
+
+div {
+    background-color: var(--secondary-color);
+    margin: 15px;
+    font-size: 25px;
+    padding: 0.5rem;
+    width: 25%;
+    text-align: center;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 5px 5px 5px #220105;
+    p{
+        font-size: 15px;
+    }
+    h2{
+        font-style: italic;
+    }
+    /* .wnnr_btn button{
+    background-color: var(--main-color);
+    color: white;
+    border: white 1px solid;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    font-size: 3rem;
+    } */
+     .highlight{
+        background-color: #fae8dd;
+        color: var(--dark-color);
+        border: 3px dashed var(--dark-color);
+        padding: 5px 5px;
+        border-radius: 15px;
+        font-size: 3rem;
+        /* box-shadow: 0px 0px 5px var(--dark-color); */
+        width: 85%;
+     }
+}
+
+
+
+.dark {
+    background-color: black;
+    background-image: linear-gradient(to bottom, var(--dark-color) 50%, var(--dark-secondary-color));
+    color: white;
+}
+
+.dark header {
+    background-color: var(--dark-secondary-color);
+    color: #dafce3;;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dark div{
+    background-color: var(--dark-secondary-color);
+    color: var(--dark-color);
+    margin: 15px;
+    font-size: 25px;
+    padding: 0.5rem;
+    width: 25%;
+    text-align: center;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 5px 5px 10px var(--dark-color);
+    p{
+        font-size: 15px;
+    }
+    h2{
+        font-style: italic;
+        color: #f1fff5;
+    }
+    .highlight{
+        background-color: #009e2d;
+        color: var(--dark-color);
+        border: 3px dashed var(--dark-color);
+        padding: 5px 5px;
+        border-radius: 15px;
+        font-size: 3rem;
+        /* box-shadow: 0px 0px 5px var(--dark-color); */
+        width: 85%;
+     }
+}
+
+footer{
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5em 0;
+}
+
+.dark footer p {
+    background-color: var(--dark-secondary-color);
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5em 0;
+}
